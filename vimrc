@@ -89,9 +89,9 @@ nmap <leader>a :Ack<space>
 augroup Vim
   autocmd!
 
-  " Reload vimrc after save.
+  " reload vimrc after save
   autocmd BufWritePost ~/.vim/vimrc source ~/.vimrc
 
-  " Create the directory if it doesn't exist.
+  " create the directory if it doesn't exist
   autocmd BufNewFile * silent !mkdir -p $(dirname %)
 augroup END
