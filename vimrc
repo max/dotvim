@@ -94,7 +94,4 @@ augroup Vim
 
   " Create the directory if it doesn't exist.
   autocmd BufNewFile * silent !mkdir -p $(dirname %)
-
-  " Don't syntax highlight markdown because it's often wrong
-  autocmd! FileType markdown setlocal syn=off
 augroup END
