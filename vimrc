@@ -9,7 +9,6 @@ set hidden                      " don't yell when hiding modified buffers
 set history=1000                " lots o' history
 set clipboard=unnamed           " link vim and the system's clipboards
 set visualbell                  " no beeping!
-set showmatch                   " flash matching brackets and parens
 set scrolloff=3                 " keep a few lines visible above and below cursor
 set backupdir=~/.vim/_backup//  " store backup files
 set directory=~/.vim/_tmp//     " store swap files
@@ -43,6 +42,12 @@ set backspace=indent,eol,start  " allow backspacing over autoindent,
 set wildmenu
 set wildmode=list:full,full
 set wildignore+=*/tmp/*,*.so,*.swp
+
+""" Code folding
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1000
 
 """ Show invisible characters
 set listchars=""                " reset the listchars
