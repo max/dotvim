@@ -78,7 +78,7 @@ let mapleader = ","
 map <leader>x :bprevious<cr>:bdelete #<cr>
 map <leader>X :bdelete<cr>
 
-nmap <leader>hs :nohlsearch<CR>
+nmap <leader>hs :set hlsearch! hlsearch?<CR>
 nmap <leader>a :Ack<space>
 
 augroup Vim
