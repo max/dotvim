@@ -10,6 +10,3 @@
 [submodule "bundle/ack"]
 	path = bundle/ack
 	url = git://github.com/mileszs/ack.vim.git
-[submodule "bundle/scss"]
-	path = bundle/scss
-	url = git://github.com/cakebaker/scss-syntax.vim.git
