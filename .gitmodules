@@ -19,3 +19,6 @@
 [submodule "bundle/base-16"]
 	path = bundle/base-16
 	url = git://github.com/chriskempson/base16-vim.git
+[submodule "bundle/coffee-script"]
+	path = bundle/coffee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
