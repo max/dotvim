@@ -59,9 +59,10 @@ set listchars+=precedes:<       " the character to show in the first column when
                                 " wrap is off and line is too long.
 
 """ Visual
-"syntax on                       " highlight my syntax plz
+syntax on                       " highlight my syntax plz
 set t_Co=256                    " more than 8 colors, kthx
-set background=light             " set the background color
+set background=dark             " set the background color
+colorscheme base16-default
 
 """ Status bar
 set laststatus=2
