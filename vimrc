@@ -85,6 +85,7 @@ map <leader>X :bdelete<cr>
 
 nmap <leader>hs :set hlsearch! hlsearch?<CR>
 nmap <leader>a :Ack!<space>
+nmap <leader>n :NERDTreeToggle<CR>
 
 augroup Vim
   autocmd!
