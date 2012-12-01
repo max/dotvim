@@ -15,9 +15,9 @@ task :submodule_pull do
       ']
 end
 
-desc %(Make ~/.vimrc and other symlinks)
+desc %(Make ~/.vimrc and ~/.gvimrc symlinks)
 task :link do
-  %w[vimrc].each do |script|
+  %w[vimrc gvimrc].each do |script|
     dotfile = File.join(ENV['HOME'], ".#{script}")
     if File.exist? dotfile
       warn "~/.#{script} already exists"

@@ -64,6 +64,10 @@ set t_Co=256                    " more than 8 colors, kthx
 set background=dark             " set the background color
 colorscheme base16-default
 
+if has('gui_running')
+  set guifont=Menlo:h16         " set font and font size
+endif
+
 """ Status bar
 set laststatus=2
 set statusline=\ %f%(\ [%M%R%W%H]%)       " filename
