@@ -28,3 +28,6 @@
 [submodule "bundle/autoclose"]
 	path = bundle/autoclose
 	url = git://github.com/Townk/vim-autoclose.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/msanders/snipmate.vim
