@@ -7,7 +7,7 @@ runtime macros/matchit.vim      " load matchit (included with vim)
 
 set hidden                      " don't yell when hiding modified buffers
 set history=1000                " lots o' history
-set clipboard=unnamed           " link vim and the system's clipboards
+" set clipboard=unnamed         " link vim and the system's clipboards
 set visualbell                  " no beeping!
 set scrolloff=3                 " keep a few lines visible above and below cursor
 set backupdir=~/.vim/_backup//  " store backup files
