@@ -80,6 +80,9 @@ set titlestring=%F                        " /path/to/file.txt (Vim)
 
 """ Plugin Configuration
 
+autocmd FileType html,eruby let b:closetag_html_style=1
+autocmd FileType html,xhtml,xml,eruby source ~/.vim/bundle/closetag/plugin/closetag.vim
+
 """ Mappings
 let mapleader = ","
 
