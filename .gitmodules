@@ -46,3 +46,6 @@
 [submodule "bundle/vim-seek"]
 	path = bundle/vim-seek
 	url = git://github.com/goldfeld/vim-seek.git
+[submodule "bundle/vim-jst"]
+	path = bundle/vim-jst
+	url = git://github.com/briancollins/vim-jst.git
