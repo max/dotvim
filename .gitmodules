@@ -46,6 +46,3 @@
 [submodule "bundle/vim-jst"]
 	path = bundle/vim-jst
 	url = git://github.com/briancollins/vim-jst.git
-[submodule "bundle/slim"]
-	path = bundle/slim
-	url = git://github.com/slim-template/slim.git
