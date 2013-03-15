@@ -10,6 +10,8 @@ set history=1000                " lots o' history
 set clipboard=unnamed           " link vim and the system's clipboards
 set visualbell                  " no beeping!
 set scrolloff=3                 " keep a few lines visible above and below cursor
+set number                      " show line numbers
+set nowrap                      " don't wrap line by default
 set backupdir=~/.vim/_backup//  " store backup files
 set directory=~/.vim/_tmp//     " store swap files
 set undodir=~/.vim/_undo        " store undo history
@@ -18,6 +20,8 @@ set undolevels=1000
 set undoreload=10000
 set splitbelow                  " I like my splits opening below
 set splitright                  " and my vsplits opening to the right
+
+set autoread                    " load file when changed outside of Vim
 
 set showcmd                     " show partial commands below status line
 set cmdheight=2                 " 2-line command window
