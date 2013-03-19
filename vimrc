@@ -98,6 +98,8 @@ nmap <leader>hs :set hlsearch! hlsearch?<CR>
 nmap <leader>a :Ack!<space>
 nmap <leader>n :NERDTreeToggle<CR>
 
+nmap <leader>s :%s/\<<C-r><C-w>\>/
+
 augroup Vim
   autocmd!
 
