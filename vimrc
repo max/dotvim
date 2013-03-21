@@ -103,8 +103,11 @@ nmap <leader>s :%s/\<<C-r><C-w>\>/
 augroup Vim
   autocmd!
 
+  " remove trailing whitespace on save
+  autocmd BufWritePre * :%s/\s\+$//e
+
   " reload vimrc after save
-  autocmd BufWritePost ~/.vim/vimrc source ~/.vimrc
+  autocmd BufWritePost $MYVIMRC source $MYVIMRC
 
   " create the directory if it doesn't exist
   autocmd BufNewFile * silent !mkdir -p $(dirname %)
