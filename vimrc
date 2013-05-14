@@ -24,14 +24,12 @@ Bundle 'scrooloose/syntastic'
 Bundle 'slim-template/vim-slim'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/Align'
 Bundle 'vim-scripts/ZoomWin'
-Bundle 'vim-scripts/closetag.vim'
 
 syntax on
 filetype plugin indent on
