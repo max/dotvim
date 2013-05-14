@@ -1,9 +1,45 @@
-set nocompatible                " screw vi-compatible features
-set encoding=utf-8              " utf-8 is fun
+set nocompatible               " be iMproved
+filetype off                   " required!
 
-call pathogen#infect()          " pathogen
+set encoding=utf-8             " utf-8 is fun
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
+"
+" original repos on github
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'Raimondi/delimitMate'
+Bundle 'briancollins/vim-jst'
+Bundle 'chriskempson/base16-vim'
+Bundle 'ervandew/supertab'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'slim-template/vim-slim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-haml'
+Bundle 'vim-scripts/closetag.vim'
+
+filetype plugin indent on      " required!
+"
+" Brief help
+" :BundleList          - list configured bundles
+" :BundleInstall(!)    - install(update) bundles
+" :BundleSearch(!) foo - search(or refresh cache first) for foo
+" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+"
+" see :h vundle for more details or wiki for FAQ
+" NOTE: comments after Bundle command are not allowed..
+
 source ~/.vim/filetypes         " load awesome filetypes
-runtime macros/matchit.vim      " load matchit (included with vim)
 
 set hidden                      " don't yell when hiding modified buffers
 set history=1000                " lots o' history
@@ -68,10 +104,6 @@ set t_Co=256                    " more than 8 colors, kthx
 set background=dark             " set the background color
 colorscheme base16-default
 
-if has('gui_running')
-  set guifont=Menlo:h16         " set font and font size
-endif
-
 """ Status bar
 set laststatus=2
 " set statusline=\ %f%(\ [%M%R%W%H]%)       " filename
@@ -83,7 +115,6 @@ set title
 set titlestring=%F                        " /path/to/file.txt (Vim)
 
 """ Plugin Configuration
-
 autocmd FileType html,eruby let b:closetag_html_style=1
 autocmd FileType html,xhtml,xml,eruby source ~/.vim/bundle/closetag/plugin/closetag.vim
 
@@ -99,6 +130,9 @@ nmap <leader>a :Ack!<space>
 nmap <leader>n :NERDTreeToggle<CR>
 
 nmap <leader>s :%s/\<<C-r><C-w>\>/
+
+" open file in Marked
+map <leader>m :silent !open % -a /Applications/Marked.app<cr>:redraw!<cr>
 
 augroup Vim
   autocmd!
