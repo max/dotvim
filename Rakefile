@@ -1,19 +1,4 @@
-task :default => [:tmp_dirs, :update, :link]
-
-desc %(Bring bundles up to date)
-task :update do
-  sh "git submodule sync >/dev/null"
-  sh "git submodule update --init"
-end
-
-desc %(Update each submodule from its upstream)
-task :submodule_pull do
-  system %[git submodule foreach '
-        git pull --quiet --ff-only --no-rebase origin master &&
-        git log --no-merges --pretty=format:"%s %Cgreen(%ar)%Creset" --date=relative master@{1}..
-        echo
-      ']
-end
+task :default => [:link, :tmp_dirs]
 
 desc %(Make ~/.vimrc and ~/.gvimrc symlinks)
 task :link do
