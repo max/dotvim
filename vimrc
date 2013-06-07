@@ -30,6 +30,9 @@ Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-surround'
 " Bundle 'vim-scripts/Align'
 " Bundle 'vim-scripts/ZoomWin'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
 
 syntax on
 filetype plugin indent on
